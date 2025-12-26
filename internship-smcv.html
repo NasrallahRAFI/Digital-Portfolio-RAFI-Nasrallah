@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMCV Internship Details | Rafi Nasrallah</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Link to external style.css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific optimization for HMI screenshots in the grid (Section 1) */
+        #section-1 .responsive-img {
+            height: 100%;
+            /* Force height to fill grid item */
+            object-fit: cover;
+            /* Crop slightly to cover the area */
+            aspect-ratio: 4 / 3;
+            /* Aspect ratio common for screens */
+        }
+
+        /* Specific optimization for thermal plots (Section 3) */
+        #section-3 .responsive-img {
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            /* Contain is better for plots/charts */
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 glass transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1
+                class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-cyan-200 truncate">
+                SMCV Internship Details</h1>
+            <a href="index.html#experience"
+                class="inline-flex items-center text-slate-300 hover:text-cyan-400 font-medium transition-colors text-sm">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back to Portfolio
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <article class="max-w-5xl mx-auto glass p-8 md:p-12 rounded-2xl relative overflow-hidden">
+            <!-- Background Blob -->
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none">
+            </div>
+
+            <!-- Title & Metadata -->
+            <section class="content-section text-center relative z-10">
+                <span
+                    class="text-xs font-bold text-white bg-cyan-600/80 px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 inline-block shadow-lg shadow-cyan-500/20">Final
+                    Project Stage</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+                    Automation (PLC/HMI), Mechanical Arm and Pneumatic Press Design, and IT Maintenance
+                </h2>
+                <p class="text-lg text-slate-300 mb-4">
+                    <strong>Company:</strong> SMCV (Société Marocaine des Compteurs) | <strong>Duration:</strong> July
+                    2025 – September 2025
+                </p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span
+                        class="bg-slate-800 text-cyan-400 text-xs font-medium px-3 py-1 rounded-full border border-slate-700">#TIA_Portal_V19</span>
+                    <span
+                        class="bg-slate-800 text-cyan-400 text-xs font-medium px-3 py-1 rounded-full border border-slate-700">#S7-1200</span>
+                    <span
+                        class="bg-slate-800 text-cyan-400 text-xs font-medium px-3 py-1 rounded-full border border-slate-700">#Mechatronics</span>
+                </div>
+            </section>
+
+            <!-- Core Objectives -->
+            <section class="content-section relative z-10">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg">
+                        <i data-lucide="target" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <span>Core Objectives</span>
+                </h3>
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    This project aimed to consolidate skills in <strong>automation</strong>, <strong>mechatronic
+                        design</strong>, and <strong>industrial IT</strong>, while providing concrete solutions to
+                    operational issues encountered at the SMCV workshop.
+                </p>
+            </section>
+
+            <!-- SECTION 1: PLC and HMI Programming -->
+            <section id="section-1" class="content-section relative z-10">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg">
+                        <i data-lucide="code" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <span>1. PLC and HMI Programming</span>
+                </h3>
+                <p class="text-slate-300 leading-relaxed text-lg mb-6">
+                    <strong>Project Focus:</strong> Development of the full functional cycle and advanced control
+                    features for the Injection Molding Machine (Haitian Mars III 2000), emphasizing safety and
+                    operational flexibility.
+                </p>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 mb-8">
+                    <h4 class="font-bold text-lg text-white mb-4">Technical Details (S7-1200 / TIA Portal V19):</h4>
+                    <ul class="list-disc ml-5 text-sm text-slate-300 space-y-3">
+                        <li><strong>Core Achievement (Functional Cycle):</strong> Implemented the full machine cycle
+                            logic, incorporating essential <strong>safety features</strong> (Emergency Stop, pressure
+                            limit detection, material presence detection).</li>
+                        <li><strong>Advanced Control:</strong> Developed and implemented a <strong>PID control
+                                loop</strong> for precise temperature regulation.</li>
+                        <li><strong>Modularity and HMI Interfacing:</strong> The code is <strong>fully modular</strong>.
+                            HMI communications allow operators to modify all critical parameters (temperature setpoint,
+                            injection time, maintaining time, cooling time, etc.).</li>
+                        <li><strong>State Visualization:</strong> The HMI provides clear visible representation of the
+                            current state of the cycle (e.g., mold opening, mold closing, cooling).</li>
+                    </ul>
+                </div>
+
+                <h4 class="font-bold text-lg text-white mb-6 flex items-center space-x-2">
+                    <i data-lucide="monitor" class="w-5 h-5 text-cyan-400"></i><span>HMI Screenshots & Visuals</span>
+                </h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Images -->
+                    <div class="group">
+                        <img src="content/Main page HMI - Mold Injection Machine.png" alt="Main page HMI"
+                            class="gallery-image responsive-img transition-transform group-hover:scale-105">
+                        <p class="text-xs text-center text-slate-400 mt-2">Main page</p>
+                    </div>
+                    <div class="group">
+                        <img src="content/Manual control page HMI - Mold Injection Machine.png"
+                            alt="Manual control page"
+                            class="gallery-image responsive-img transition-transform group-hover:scale-105">
+                        <p class="text-xs text-center text-slate-400 mt-2">Manual Control</p>
+                    </div>
+                    <div class="group">
+                        <img src="content/Confuguration page part 1 HMI - Mold Injection Machine.png"
+                            alt="Configuration page 1"
+                            class="gallery-image responsive-img transition-transform group-hover:scale-105">
+                        <p class="text-xs text-center text-slate-400 mt-2">Config 1</p>
+                    </div>
+                    <div class="group">
+                        <img src="content/Confuguration page part 2 HMI - Mold Injection Machine.png"
+                            alt="Configuration page 2"
+                            class="gallery-image responsive-img transition-transform group-hover:scale-105">
+                        <p class="text-xs text-center text-slate-400 mt-2">Config 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: Mechanical Insertion Arm Design -->
+            <section id="section-2" class="content-section relative z-10">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg">
+                        <i data-lucide="box-select" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <span>2. Mechanical Insertion Arm Design</span>
+                </h3>
+
+                <div class="bg-yellow-900/20 p-6 rounded-xl border-l-4 border-yellow-500 mb-6">
+                    <h4 class="font-bold text-lg text-yellow-400 mb-3 flex items-center space-x-2">
+                        <i data-lucide="alert-triangle" class="w-5 h-5"></i><span>Problem Statement & Impact</span>
+                    </h4>
+                    <ul class="list-disc ml-5 text-sm text-slate-300 space-y-1">
+                        <li>The previous manual correction of poorly inserted nuts led to <strong>variability in parts
+                                quality</strong>.</li>
+                        <li>The process resulted in <strong>time loss</strong> and a <strong>reduction in overall
+                                process efficiency</strong>.</li>
+                    </ul>
+                </div>
+
+                <p class="text-slate-300 leading-relaxed text-lg mb-6">
+                    <strong>Objective:</strong> The goal of this phase was to design a manual insertion arm capable of
+                    executing this task reliably, repeatedly, and seamlessly integrated into the production cycle.
+                </p>
+
+                <!-- Visuals -->
+                <div class="mb-6">
+                    <img src="content/mechanical_arm_design.png"
+                        alt="Mechanical design of the mechanical arm for nut insertion - Autodesk Inventor"
+                        class="gallery-image h-auto aspect-[16/9] mb-2">
+                    <p class="text-xs text-center text-slate-400 mt-1">Figure 2.1: 3D Model of the Nut Insertion Arm
+                        (Autodesk Inventor).</p>
+                </div>
+
+                <!-- Results and Decision -->
+                <div class="bg-blue-900/20 p-6 rounded-xl border-l-4 border-blue-500">
+                    <h4 class="font-bold text-lg text-blue-400 mb-3 flex items-center space-x-2">
+                        <i data-lucide="arrow-right-circle" class="w-5 h-5"></i><span>Results and Next Step
+                            Decision</span>
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                        The implementation of the mechanical insertion arm significantly reduced nut perpendicularity
+                        defects and improved the operator's working conditions.
+                        However, this solution presented a major limitation: <strong>insertion remained manual and
+                            sequential, nut by nut, which slowed down the production rate.</strong>
+                    </p>
+                    <p class="text-sm text-slate-300 leading-relaxed font-semibold">
+                        <strong>Decision:</strong> Despite the improvement, it was imperative to guarantee both part
+                        quality and high productivity. Thus, we decided to develop a solution for the
+                        <strong>simultaneous insertion of all nuts</strong> (leading to Section 3).
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 3: Design and Programming of a Nut Insertion Press -->
+            <section id="section-3" class="content-section relative z-10">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg">
+                        <i data-lucide="settings-2" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <span>3. Nut Insertion Press Design and Programming</span>
+                </h3>
+
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 mb-8">
+                    <h4 class="font-bold text-lg text-white mb-4">Technical Scope:</h4>
+                    <ul class="list-disc ml-5 text-sm text-slate-300 space-y-2">
+                        <li><strong>Mechanical Design:</strong> Complete structural and functional design of the press
+                            (using Autodesk Inventor).</li>
+                        <li><strong>Automation:</strong> PLC programming (TIA Portal) for sequence control, safety, and
+                            operational logic.</li>
+                        <li><strong>HMI Development:</strong> Creation of the Human-Machine Interface for command,
+                            monitoring, and parameter setting.</li>
+                        <li><strong>Thermal Analysis:</strong> Execution of a <strong>thermal study</strong> for the
+                            heating process to ensure optimal and safe nut insertion temperatures.</li>
+                    </ul>
+                </div>
+
+                <h4 class="font-bold text-lg text-white mb-4 flex items-center space-x-2">
+                    <i data-lucide="camera" class="w-5 h-5 text-cyan-400"></i><span>Visuals & Thermal Analysis</span>
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <img src="HMI nut insertion press.png" alt="HMI nut insertion press screenshot"
+                            class="gallery-image responsive-img">
+                        <p class="text-xs text-center text-slate-400 mt-2">HMI nut insertion press</p>
+                    </div>
+                    <div>
+                        <img src="Evolution of nut temperature based on the heating source.png" alt="Thermal plot"
+                            class="gallery-image responsive-img">
+                        <p class="text-xs text-center text-slate-400 mt-2">Evolution of nut temperature based on the
+                            heating source</p>
+                    </div>
+                </div>
+                <div class="max-w-md mx-auto mt-6">
+                    <img src="Evolution of nut temperature in cool down phase based on Initial temperature.png"
+                        alt="Thermal plot cooldown" class="gallery-image responsive-img">
+                    <p class="text-xs text-center text-slate-400 mt-2">Evolution of nut temperature in cool down phase
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 4: Industrial IT Maintenance -->
+            <section id="section-4" class="content-section relative z-10">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg">
+                        <i data-lucide="pc-case" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <span>4. Industrial IT Maintenance</span>
+                </h3>
+                <p class="text-slate-300 leading-relaxed text-lg mb-6">
+                    <strong>Context and Justification:</strong> IT workstations, running the industrial software
+                    Inhemeter, are central to the configuration, parameterization, and testing of electricity meters.
+                    Any material or software failure can cause production delays or shutdowns.
+                </p>
+
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 mb-6">
+                    <h4 class="font-bold text-lg text-white mb-3">Diagnosis and Troubleshooting:</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                        Configuration workstations were experiencing significant instability due to an unstable,
+                        Chinese-language Virtual Machine (VM) running Windows XP.
+                    </p>
+                    <h5 class="font-semibold text-sm text-cyan-400 mb-2">Actions Taken:</h5>
+                    <ul class="list-disc ml-5 text-sm text-slate-300 space-y-1">
+                        <li>Installed the latest stable and professional version of the Virtual Machine software with an
+                            <strong>English interface</strong>.
+                        </li>
+                        <li>Reinstalled and configured <strong>Windows XP</strong> within the new VM instance.</li>
+                        <li>Updated and installed necessary drivers to ensure compatibility with the industrial software
+                            and peripherals.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-900/20 p-6 rounded-xl border-l-4 border-blue-500">
+                    <h4 class="font-bold text-lg text-blue-400 mb-3 flex items-center space-x-2">
+                        <i data-lucide="award" class="w-5 h-5"></i><span>Results</span>
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed mb-3">
+                        These maintenance actions immediately restored the proper functioning of the configuration
+                        workstations, significantly reducing crashes and improving the fluidity of the meter programming
+                        process.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="content-section relative z-10">
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center space-x-3">
+                    <div class="p-2 bg-cyan-500/10 rounded-lg">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-cyan-400"></i>
+                    </div>
+                    <span>General Conclusion and Perspectives</span>
+                </h3>
+
+                <div class="mb-8">
+                    <h4 class="font-bold text-xl text-white mb-3">A. Internship Summary</h4>
+                    <p class="text-slate-300 leading-relaxed mb-3">
+                        During this internship, I participated in several major projects aimed primarily at the
+                        improvement and automation of the nut insertion processes in electricity meters.
+                    </p>
+                    <ul class="list-disc ml-5 text-sm text-slate-300 space-y-1">
+                        <li>Contributed to the <strong>mechanical design and dimensioning</strong> of the nut insertion
+                            press.</li>
+                        <li>Developed the <strong>PLC program and HMI interfaces</strong>.</li>
+                        <li>Conducted <strong>thermal simulations and calculations</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-slate-800/50 rounded-xl border border-slate-700/50 mb-6">
+                    <h4 class="font-bold text-xl text-white mb-3">C. Future Perspectives</h4>
+                    <ul class="list-disc ml-5 text-sm text-slate-300 space-y-2">
+                        <li><strong>Process Improvement:</strong> Optimization of heating and cooling cycles,
+                            integration of active cooling systems to reduce downtime.</li>
+                        <li><strong>Skill Development:</strong> Deepening mastery of thermal simulation, mechanical
+                            modeling, and PLC programming software for future complex projects.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SUPERVISOR EVALUATION -->
+            <section id="evaluation" class="content-section relative z-10">
+                <h3 class="text-xl font-bold text-red-400 mb-4 flex items-center space-x-2">
+                    <i data-lucide="star" class="w-6 h-6"></i><span>Supervisor's Evaluation (20/20)</span>
+                </h3>
+
+                <div class="bg-red-900/30 p-4 rounded-lg border-l-4 border-red-500 mb-6">
+                    <h4 class="font-bold text-lg text-red-300 mb-2">Overall Remarks:</h4>
+                    <p class="text-base italic text-slate-300 leading-relaxed">
+                        "Travail sérieux, ponctualité et respect des consignes." (Serious work, punctuality, and respect
+                        for instructions.)
+                    </p>
+                </div>
+
+                <h4 class="font-semibold text-lg text-white mb-4 mt-6">Full Evaluation Sheet:</h4>
+                <div class="rounded-lg overflow-hidden shadow-xl max-w-xl mx-auto border border-slate-700">
+                    <img src="content/SMCV_Supervisor_Evaluation.jpg" alt="Supervisor's Detailed Evaluation"
+                        class="w-full h-auto">
+                </div>
+            </section>
+
+            <!-- Final Return Link -->
+            <section class="text-center pt-8 relative z-10">
+                <a href="index.html#experience"
+                    class="inline-flex items-center font-bold text-white bg-gradient-to-r from-cyan-600 to-blue-600 py-3 px-8 rounded-full shadow-lg hover:shadow-cyan-500/30 hover:-translate-y-1 transition-all">
+                    <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i> Return to Main Portfolio
+                </a>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Script to initialize Lucide icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
