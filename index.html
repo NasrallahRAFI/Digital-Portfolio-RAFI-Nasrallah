@@ -28,6 +28,8 @@
 
     <!-- Link to external style.css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Theme Switcher Script -->
+    <script src="theme.js"></script>
 
 </head>
 
@@ -64,8 +66,14 @@
                     class="text-slate-300 hover:text-cyan-400 font-medium transition-colors">Interest</a>
             </nav>
 
-            <!-- Mobile Menu Button -->
-            <div class="flex items-center space-x-4">
+            <!-- Action Buttons -->
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <!-- Theme Toggle Button -->
+                <button aria-label="Toggle Theme" onclick="toggleTheme()"
+                    class="p-2 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-cyan-400 transition-colors flex items-center justify-center">
+                    <i id="theme-toggle-icon" data-lucide="layers" class="w-5 h-5"></i>
+                </button>
+                <!-- Mobile Menu Button -->
                 <button id="mobile-menu-button"
                     class="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800 transition-colors"
                     aria-label="Open Menu">
