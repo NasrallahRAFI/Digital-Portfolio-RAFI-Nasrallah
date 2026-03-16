@@ -12,12 +12,31 @@
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+/* Dashboard Theme Overrides */
+body.theme-dashboard {
+    --bg-color: #080a10;
+    --glass-bg: #161a26;
+    --glass-border: #1e2335;
+    --glass-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+body.theme-dashboard .animated-background {
+    opacity: 0;
+}
+
+/* Remove blur for flat design in Dashboard */
+body.theme-dashboard .glass {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color 0.5s ease, color 0.5s ease;
     /* Prevent horizontal scroll from blobs */
 }
 
@@ -31,6 +50,7 @@ body {
     z-index: -1;
     overflow: hidden;
     pointer-events: none;
+    transition: opacity 0.5s ease;
 }
 
 .blob {
@@ -99,6 +119,7 @@ body {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
     box-shadow: var(--glass-shadow);
+    transition: background 0.5s ease, backdrop-filter 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 .project-card,
