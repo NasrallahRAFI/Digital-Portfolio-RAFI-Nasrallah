@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!-- Link to external style.css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Theme Switcher Script -->
+    <script src="theme.js"></script>
     <style>
         /* Specific optimization for HMI screenshots in the grid (Section 1) */
         #section-1 .responsive-img {
@@ -40,10 +42,15 @@
             <h1
                 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-cyan-200 truncate">
                 SMCV Internship Details</h1>
-            <a href="index.html#experience"
-                class="inline-flex items-center text-slate-300 hover:text-cyan-400 font-medium transition-colors text-sm">
-                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back to Portfolio
-            </a>
+            <div class="flex items-center space-x-6">
+                <button aria-label="Toggle Theme" onclick="toggleTheme()" class="text-slate-300 hover:text-cyan-400 transition-colors">
+                    <i id="theme-toggle-icon" data-lucide="layers" class="w-5 h-5"></i>
+                </button>
+                <a href="index.html#experience"
+                    class="inline-flex items-center text-slate-300 hover:text-cyan-400 font-medium transition-colors text-sm">
+                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> Back to Portfolio
+                </a>
+            </div>
         </div>
     </header>
 
